@@ -1,17 +1,24 @@
+body {
+  background-color: #FAFAFA;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .section {
   background-color: #FAFAFA;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .about {
   display: flex;
   flex-direction: column;
+  width: 500px;
 }
 
 .about__icon {
@@ -63,4 +70,17 @@
   font-weight: bold;
 
   border-bottom: 10px solid #52BAFF;
+}
+
+.img_card img {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(0px, 6px) rotate(0deg); }
+  
+  50% { transform: translate(0px, 0px) rotate(0deg); }
+  
+  100% { transform: translate(0px, 6px) rotate(0deg); }
 }
