@@ -46,3 +46,36 @@ p > span {
 | justify-content: center; | justify-content-center |
 | align-items: center;     | align-items-center     |
 - Grid System
+
+```html
+<!-- 1개의 row 안에 12개의 column 영역이 구성 각 요소는 12개 중 몇 개를 차지할 것인지 지정 -->
+<div class="container">
+	<div class="row">
+		<div class="col-4"></div>
+		<div class="col-4"></div>
+		<div class="col-4"></div>
+	</div>
+</div>
+<!-- Grid System 중첩 -->
+<div class="container">
+	<div class="row">
+		<div class="box col-4">col-4</div>
+		<div class="box col-8">
+			<div class="row">
+				<div class="box col-6">col-6</div>
+				<div class="box col-6">col-6</div>
+				<div class="box col-6">col-6</div>
+				<div class="box col-6">col-6</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Grid System 상쇄 -->
+<div class="container">
+	<div class="row">
+		<div class="box col-4">col-4</div>
+		<div class="box col-4 offset-4">col-4 offset-4</div>
+	</div> <!-- 이렇게 작성하면 4칸 차지 후 4칸 띄우고 4칸 차지함 -->
+</div>
+```
